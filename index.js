@@ -3,7 +3,7 @@
  * @returns {number} the length of the array
  */
 function getLength(numbers) {
-  // TODO
+  return numbers.length;
 }
 
 /**
@@ -11,7 +11,11 @@ function getLength(numbers) {
  * @returns {number} the sum of the numbers
  */
 function getSum(numbers) {
-  // TODO
+  let count = 0;
+  for (let i = 0; i < numbers.length; i++) {
+    count += numbers[i];
+  }
+  return count;
 }
 
 /**
@@ -19,7 +23,7 @@ function getSum(numbers) {
  * @returns {number} the mean of the numbers
  */
 function getMean(numbers) {
-  // TODO
+  return getSum(numbers) / getLength(numbers); // TODO
 }
 
 /**
@@ -27,7 +31,13 @@ function getMean(numbers) {
  * @returns {number} the smallest of the numbers
  */
 function getMin(numbers) {
-  // TODO
+  let MinNumber = numbers[0];
+  for (const number of numbers) {
+    if (number < MinNumber) {
+      MinNumber = number;
+    }
+  }
+  return MinNumber;
 }
 
 /**
@@ -35,7 +45,13 @@ function getMin(numbers) {
  * @returns {number} the largest of the numbers
  */
 function getMax(numbers) {
-  // TODO
+  let MaxNumber = numbers[0];
+  for (const number of numbers) {
+    if (number > MaxNumber) {
+      MaxNumber = number;
+    }
+  }
+  return MaxNumber;
 }
 
 /**
@@ -43,7 +59,7 @@ function getMax(numbers) {
  * @returns {number} the range of the numbers (max - min)
  */
 function getRange(numbers) {
-  // TODO
+  return getMax(numbers) - getMin(numbers);
 }
 
 /**
@@ -51,7 +67,13 @@ function getRange(numbers) {
  * @returns {number[]} the even numbers in the array
  */
 function getEvens(numbers) {
-  // TODO
+  let EvenNumbers = [];
+  for (let number of numbers) {
+    if (number % 2 === 0) {
+      EvenNumbers.push(number);
+    }
+  }
+  return EvenNumbers;
 }
 
 /**
@@ -59,7 +81,13 @@ function getEvens(numbers) {
  * @returns {number[]} the odd numbers in the array
  */
 function getOdds(numbers) {
-  // TODO
+  let OddNumbers = [];
+  for (let number of numbers) {
+    if (number % 2 === 1 || number % 2 === -1) {
+      OddNumbers.push(number);
+    }
+  }
+  return OddNumbers;
 }
 
 // === READ BUT DO NOT EDIT THE CODE BELOW ===
