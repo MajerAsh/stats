@@ -1,4 +1,4 @@
-/**
+/** 1️⃣
  * @param {number[]} numbers an array of integers
  * @returns {number} the length of the array
  */
@@ -6,7 +6,7 @@ function getLength(numbers) {
   return numbers.length;
 }
 
-/**
+/** 2️⃣
  * @param {number[]} numbers an array of integers
  * @returns {number} the sum of the numbers
  */
@@ -19,9 +19,9 @@ function getSum(numbers) {
   return sum;
 }
 
-// prints: the sum of your numbers is 14somthingsmthng
+// The sum of your numbers is 1418.
 
-/**
+/** 3️⃣
  * @param {number[]} numbers an array of integers
  * @returns {number} the mean of the numbers
  */
@@ -34,7 +34,9 @@ function getMean(numbers) {
   return mean;
 }
 
-/**
+//The mean of your numbers is 283.6.
+
+/** 4️⃣
  * @param {number[]} numbers an array of integers
  * @returns {number} the smallest of the numbers
  */
@@ -42,7 +44,7 @@ function getMin(numbers) {
   //todo
 }
 
-/**
+/** 5️⃣
  * @param {number[]} numbers an array of integers
  * @returns {number} the largest of the numbers
  */
@@ -50,7 +52,7 @@ function getMax(numbers) {
   //todo
 }
 
-/**
+/** 6️⃣9
  * @param {number[]} numbers an array of integers
  * @returns {number} the range of the numbers (max - min)
  */
@@ -58,7 +60,7 @@ function getRange(numbers) {
   //todo
 }
 
-/**
+/** 7️⃣
  * @param {number[]} numbers an array of integers
  * @returns {number[]} the even numbers in the array
  */
@@ -66,7 +68,7 @@ function getEvens(numbers) {
   //todo
 }
 
-/**
+/** 8️⃣
  * @param {number[]} numbers an array of integers
  * @returns {number[]} the odd numbers in the array
  */
