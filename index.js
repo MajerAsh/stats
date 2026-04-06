@@ -41,40 +41,74 @@ function getMean(numbers) {
  * @returns {number} the smallest of the numbers
  */
 function getMin(numbers) {
-  //todo
+  let min = 0;
+
+  for (let i = numbers[0]; i < numbers.length; i++) {
+    if (numbers[i] < min) {
+      min = numbers[i];
+    }
+  }
+  return min;
 }
+//The smallest of your numbers is -15.
 
 /** 5️⃣
  * @param {number[]} numbers an array of integers
  * @returns {number} the largest of the numbers
  */
 function getMax(numbers) {
-  //todo
-}
+  let max = 0;
 
-/** 6️⃣9
+  for (let i = 0; i < numbers.length; i++) {
+    if (numbers[i] > max) {
+      max = numbers[i];
+    }
+  }
+  return max;
+}
+// The largest of your numbers is 975.
+
+/** 6️⃣
  * @param {number[]} numbers an array of integers
  * @returns {number} the range of the numbers (max - min)
  */
 function getRange(numbers) {
-  //todo
+  return getMax(numbers) - getMin(numbers);
 }
+// The range of your numbers is 990.
 
 /** 7️⃣
  * @param {number[]} numbers an array of integers
  * @returns {number[]} the even numbers in the array
  */
 function getEvens(numbers) {
-  //todo
+  let evens = [];
+
+  for (let i = 0; i < numbers.length; i++) {
+    if (numbers[i] % 2 === 0) {
+      evens.push(numbers[i]);
+    }
+  }
+  return evens;
 }
+//The even numbers you gave are 28,30,400.
 
 /** 8️⃣
  * @param {number[]} numbers an array of integers
  * @returns {number[]} the odd numbers in the array
  */
 function getOdds(numbers) {
-  //todo
+  let odds = [];
+
+  for (let i = 0; i < numbers.length; i++) {
+    if (numbers[i] % 2 === 1 || numbers[i] % 2 === -1) {
+      odds.push(numbers[i]);
+    }
+  }
+  return odds;
 }
+
+// The odd numbers you gave are -15,975.
 
 // === READ BUT DO NOT EDIT THE CODE BELOW ===
 
