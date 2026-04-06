@@ -10,20 +10,28 @@ function getLength(numbers) {
  * @param {number[]} numbers an array of integers
  * @returns {number} the sum of the numbers
  */
+
 function getSum(numbers) {
-  let count = 0;
+  let sum = 0;
   for (let i = 0; i < numbers.length; i++) {
-    count += numbers[i];
+    sum += numbers[i];
   }
-  return count;
+  return sum;
 }
+
+// prints: the sum of your numbers is 14somthingsmthng
 
 /**
  * @param {number[]} numbers an array of integers
  * @returns {number} the mean of the numbers
  */
 function getMean(numbers) {
-  return getSum(numbers) / getLength(numbers); // TODO
+  let mean = 0;
+
+  for (let i = 0; i < numbers.length; i++) {
+    mean += numbers[i] / numbers.length;
+  }
+  return mean;
 }
 
 /**
@@ -31,13 +39,7 @@ function getMean(numbers) {
  * @returns {number} the smallest of the numbers
  */
 function getMin(numbers) {
-  let MinNumber = numbers[0];
-  for (const number of numbers) {
-    if (number < MinNumber) {
-      MinNumber = number;
-    }
-  }
-  return MinNumber;
+  //todo
 }
 
 /**
@@ -45,13 +47,7 @@ function getMin(numbers) {
  * @returns {number} the largest of the numbers
  */
 function getMax(numbers) {
-  let MaxNumber = numbers[0];
-  for (const number of numbers) {
-    if (number > MaxNumber) {
-      MaxNumber = number;
-    }
-  }
-  return MaxNumber;
+  //todo
 }
 
 /**
@@ -59,7 +55,7 @@ function getMax(numbers) {
  * @returns {number} the range of the numbers (max - min)
  */
 function getRange(numbers) {
-  return getMax(numbers) - getMin(numbers);
+  //todo
 }
 
 /**
@@ -67,13 +63,7 @@ function getRange(numbers) {
  * @returns {number[]} the even numbers in the array
  */
 function getEvens(numbers) {
-  let EvenNumbers = [];
-  for (let number of numbers) {
-    if (number % 2 === 0) {
-      EvenNumbers.push(number);
-    }
-  }
-  return EvenNumbers;
+  //todo
 }
 
 /**
@@ -81,13 +71,7 @@ function getEvens(numbers) {
  * @returns {number[]} the odd numbers in the array
  */
 function getOdds(numbers) {
-  let OddNumbers = [];
-  for (let number of numbers) {
-    if (number % 2 === 1 || number % 2 === -1) {
-      OddNumbers.push(number);
-    }
-  }
-  return OddNumbers;
+  //todo
 }
 
 // === READ BUT DO NOT EDIT THE CODE BELOW ===
@@ -127,7 +111,20 @@ function describeNumbers(numbers) {
 
 const userInputString = prompt(
   "Please enter some integers separated by commas.",
-  "28,-15,30,975,400"
+  "28,-15,30,975,400",
 );
 const numbers = convertStringToNumbers(userInputString);
 describeNumbers(numbers);
+
+//ANSWER:
+/* 2 class answer:
+function getSum(numbers) {
+  // todo}
+  let count = 0;
+
+  for (let i = 0; i < numbers.length; i++) {
+    count += numbers[i]; // aka count = count + numbers[i];
+  }
+  return count;
+}; // prints: the sum of your numbers is 14somthingsmthng
+*/
